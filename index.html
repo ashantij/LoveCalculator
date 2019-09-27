@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Love Calculator App</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+
+
+
+  <div class="bg_heart"></div>
+  <div id="preloader">
+    <div class="bg-cover"><img src="https://www.heart2heartrelationships.com/wp-content/uploads/2018/06/heart.gif" class="img-fluid bg-white"></div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container text-center">
+    <h1 class="title">Find Your True Love</h1>
+    <div class="clearfix">
+      <div class="calc col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+        <h1 class="white-text">Love Calculator</h1>
+        <h4 class="white-text">Enter your Names to Find Your True LOVE!!!! </h4>
+        <form role="form" class="form-horizontal">
+          <div class="form-group">
+            <input type="text" class="form-control" name="names" placeholder="Enter Your Name" />
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="names" placeholder="Enter Their Name" />
+          </div>
+          <div class="form-group">
+            <button onclick="Calculation()" class="btn btn-danger pull-right start-button" type="submit" id="submit">Calculate</button>
+            <script src="index.js" charset=utf-8></script>
+
+          </div>
+        </form>
+        <p id="warning" class="text-danger"></p>
+        <div id="result" class="text-center"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#preloader")
+        .show()
+        .delay(5000)
+        .fadeOut()
+        .hide("slow");
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+</body>
+<footer>
+</footer>
+
+</html>
